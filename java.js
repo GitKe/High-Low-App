@@ -5,9 +5,9 @@ $(document).ready(function() {
         var name2 = parseInt(name1)
         $("p").html(name2);
         
-        var num = 23;
+        var num = Math.floor((Math.random() * 10));
         if (num>name1) {
-            $("p").html("The number is too high!");
+            $("p").html("The number is too low!");
         }
         else if (num == name1) {
             $("p").html("The guess is correct!");
@@ -16,7 +16,7 @@ $(document).ready(function() {
             $("p").html("This is not a number!");
         }
         else {
-            $("p").html("The number is too low!");
+            $("p").html("The number is too high!");
         }
     
         })
